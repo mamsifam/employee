@@ -45,10 +45,19 @@ txtemail.grid(column=3,row=3,padx=10,pady=10)
 
 lblgender=Label(entry_frame,text="Gender",bg="#535c68",fg='white',font=('calibri',16))
 lblgender.grid(column=0,row=4,padx=10,pady=10,sticky='w')
-combogender=ttk.Combobox(entry_frame,font=('calibri',16),textvariable=gender,width=24,state='readonly')
+combogender=ttk.Combobox(entry_frame,font=('calibri',16),textvariable=gender,width=26,state='readonly')
 combogender['value']=('Male','Female')
 combogender.grid(column=1,row=4,padx=10,sticky='w')
 
+lblcontact=Label(entry_frame,text="Contact No",bg="#535c68",fg='white',font=16)
+lblcontact.grid(column=2,row=4,padx=10,pady=10,sticky="w")
+txtcontect=Entry(entry_frame,textvariable=contact,font=('calibri',16),width=28)
+txtcontect.grid(column=3,row=4,padx=10,pady=10)
+
+lbltext=Label(entry_frame,text="Adress",bg="#535c68",fg='white',font=16)
+lblemail.grid(column=0,row=5,padx=10,pady=10,sticky="w")
+txtemail=Text(entry_frame,textvariable=age,font=('calibri',16),width=28)
+txtemail.grid(column=3,row=3,padx=10,pady=10)
 #table frame
 
 
