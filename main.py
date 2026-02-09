@@ -15,6 +15,7 @@ doj=StringVar()
 gender=StringVar()
 email=StringVar()
 contact=StringVar()
+Textnote=StringVar()
 
 #entry frame
 entry_frame =Frame(root,bg="#535c68")
@@ -55,9 +56,9 @@ txtcontect=Entry(entry_frame,textvariable=contact,font=('calibri',16),width=28)
 txtcontect.grid(column=3,row=4,padx=10,pady=10)
 
 lbltext=Label(entry_frame,text="Adress",bg="#535c68",fg='white',font=16)
-lblemail.grid(column=0,row=5,padx=10,pady=10,sticky="w")
-txtemail=Text(entry_frame,textvariable=age,font=('calibri',16),width=28)
-txtemail.grid(column=3,row=3,padx=10,pady=10)
+lbltext.grid(column=0,row=5,padx=10,pady=10,sticky="w")
+txteaddress=Text(entry_frame,font=('calibri',16),width=85,height=5)
+txteaddress.grid(column=0,row=6,padx=10,pady=10,columnspan=4)
 #table frame
 
 
